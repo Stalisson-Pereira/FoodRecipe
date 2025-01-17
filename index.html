@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Meals For Your Ingredients</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div id="loadingSpinner" class="loading hidden"></div>
+
+    <div class="container">
+        <header>
+            <h1>Find Meals For Your Ingredients</h1>
+            <p>True creativity isn't built from tools; true creativity is the essence of the tools.</p>
+        </header>
+        <div class="search-container">
+            <input type="text" id="ingredientInput" placeholder="Enter Ingredient (e.g., Egg)" />
+            <button id="searchBtn"><i class="fas fa-search"></i> Search</button>
+        </div>
+        <div id="results" class="results-grid"></div>
+    </div>
+
+    <div id="recipePopup" class="popup hidden">
+        <div class="popup-content">
+            <div class="popup-heading">
+                <span id="closePopup" class="close-btn">X</span>
+                <h3 id="recipeTitle">Recipe Title</h3>
+            </div>
+            <div id="recipeDetails" class="recipe-text"></div>
+        </div>
+    </div>
+</body>
+</html>
